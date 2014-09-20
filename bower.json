@@ -1,0 +1,26 @@
+{
+  "name": "fix-bs-modal",
+  "version": "0.0.1",
+  "authors": [
+    "Hisateru Tanaka <tanakahisateru@gmail.com>"
+  ],
+  "description": "Fix Bootstrap Modal Scrolling",
+  "main": "fix-bs-modal.jquery.js",
+  "keywords": [
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "html5shiv": "~3.7.2",
+    "respond": "~1.4.2",
+    "jquery": "~2.1.1"
+  }
+}
