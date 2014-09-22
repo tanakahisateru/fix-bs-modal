@@ -1,5 +1,5 @@
 jQuery.fn.fixBsModal = function () {
-    if (!/(iPad|iPhone|iPod)/g.test(navigator.userAgent)) { // enough?
+    if (!/(iPad|iPhone|iPod)/.test(navigator.userAgent)) { // enough?
         return;
     }
     this.data('currentScrollTop', 0);
@@ -10,10 +10,10 @@ jQuery.fn.fixBsModal = function () {
             top: -currentScrollTop
         };
         $(window).scrollTop(0);
-        $('body').css(props);
+        $('html').css(props);
         $(this).data('currentScrollTop', currentScrollTop);
     }).on('hidden.bs.modal', function () {
-        $('body').css({
+        $('html').css({
             position: '',
             top: ''
         });
