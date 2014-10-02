@@ -1,5 +1,5 @@
 jQuery.fn.fixBsModal = function () {
-    if (!/(iPad|iPhone|iPod)/.test(navigator.userAgent)) { // enough?
+    if (!/(iPad|iPhone|iPod|Android)/.test(navigator.userAgent)) { // enough?
         return;
     }
     this.data('currentScrollTop', 0);
